@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "top-notes"
+version = "1.0"
+description = "A polished tray-based rich-text notes editor for Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "spaceshit" }]
+keywords = ["notes", "rich-text", "linux", "tray", "desktop"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: X11 Applications :: Qt",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Desktop Environment",
+  "Topic :: Text Editors",
+]
+# Essentials contains QtCore/Gui/Widgets/Svg without the much larger WebEngine,
+# 3D, multimedia, Bluetooth, and other add-on modules this app does not use.
+dependencies = ["PySide6-Essentials>=6.8,<7"]
+
+[project.gui-scripts]
+top-notes = "top_notes.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+top_notes = ["resources/*.svg"]
