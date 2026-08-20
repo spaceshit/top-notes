@@ -27,6 +27,11 @@ corner of your desktop whenever inspiration strikes.
 There are no accounts to create, no sync service to configure, and no network
 connection required. Your notes remain on your computer.
 
+<div align="center">
+<img width="418" height="277" alt="top-notes" src="https://github.com/user-attachments/assets/1704ee40-278d-45f4-bc80-bbd68fcefd5e" />
+</div>
+
+
 ## Highlights
 
 | | Feature | What it gives you |
@@ -39,17 +44,6 @@ connection required. Your notes remain on your computer.
 | ⚡ | **Delightfully small** | A focused desktop app with one runtime dependency and no browser engine, telemetry, plugins, or network activity. |
 
 ## Install
-
-### From a GitHub release
-
-Download the `top_notes-1.0-py3-none-any.whl` file from this repository’s
-latest release, then install it with Python:
-
-```bash
-python3 -m pip install ./top_notes-1.0-py3-none-any.whl
-```
-
-### From PyPI
 
 Once the package is published on PyPI, installation is even simpler:
 
