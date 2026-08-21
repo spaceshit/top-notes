@@ -7,9 +7,11 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: top-notes-environment
 
     permissions:
       id-token: write
+      contents: read
 
     steps:
       - uses: actions/checkout@v4
